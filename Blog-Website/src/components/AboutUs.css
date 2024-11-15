@@ -1,0 +1,75 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-direction: row; /* Default for larger screens */
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px; /* Space between the text and the underline */
+    display: inline-block; /* Ensure the underline is only as wide as the text */
+}
+
+.about-content h2::after {
+    content: "";
+    position: absolute;
+    left: 0; /* Align the line to the start of the text */
+    bottom: 0;
+    width: 170px; /* Adjust the width of the underline */
+    height: 3px; /* Adjust the thickness of the underline */
+    background-color: black; /* Color of the underline */
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px; /* Limit the max width to prevent the image from being too large */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .about-content h2::after {
+        left: 50%;
+        transform: translateX(-50%); /* Center the line */
+        width: 100px; /* Increase the width of the underline on mobile devices */
+    }
+
+    .about-content {
+        padding-right: 0;
+        text-align: center; /* Center the text */
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        max-width: 100%; /* Let the image take full width on mobile */
+        text-align: center; /* Center the image */
+    }
+
+    .about-image img {
+        max-width: 100%; /* Ensure image is not too large */
+    }
+}

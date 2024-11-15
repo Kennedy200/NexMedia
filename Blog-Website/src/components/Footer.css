@@ -1,0 +1,13 @@
+/* Footer styles */
+.footer-container {
+    background-color: #1e1e1e; /* Black background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container p {
+    color: #fff; /* White text color */
+    margin: 0;
+    font-size: 14px;
+  }
+  

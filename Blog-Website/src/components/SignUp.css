@@ -1,0 +1,69 @@
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    color: #0c6e8e;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f54242; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-btn:hover {
+    background-color: #f77373;
+  }
+  
+  .google-signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .google-signup-btn svg {
+    margin-right: 10px;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  

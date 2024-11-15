@@ -1,0 +1,77 @@
+.learn-more-section {
+  padding: 60px 20px;
+  background-color: #e0f7fa; /* Light background */
+  text-align: center;
+  margin-top: 40px;
+}
+
+.header-container h2 {
+  font-size: 3rem;
+  color: #00695c; /* Deep teal color for title */
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.header-container h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #00acc1; /* Decorative line below header */
+  border-radius: 2px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive behavior for small devices */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center-align each box */
+  }
+
+  .feature-box {
+    width: 100%; /* Make boxes take full width */
+    margin-bottom: 30px; /* Add spacing between them */
+  }
+}

@@ -1,0 +1,157 @@
+/* Global settings for better typography and responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Soft background for readability */
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Styling for the form container */
+  .create-post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Heading style */
+  .create-post h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* General form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Make the title field longer */
+  input[type="text"],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px; /* Larger font for better readability */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Title field is longer and more prominent */
+  input[type="text"] {
+    height: 50px; /* Make the title field taller */
+    font-weight: bold; /* Bold title for more focus */
+  }
+  
+  /* Focused state styling for inputs */
+  input[type="text"]:focus,
+  textarea:focus,
+  select:focus,
+  input[type="file"]:focus {
+    border-color: #4bb543; /* Green focus border */
+  }
+  
+  /* Larger content field */
+  textarea {
+    width: 100%;
+    min-height: 400px; /* Increased height for a large writing space */
+    font-size: 18px;   /* Larger text for better readability */  /* Allow vertical resizing */
+    border-radius: 4px;
+    resize: both;
+    padding: 15px;     /* Padding inside the textarea */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  textarea:focus {
+    border-color: #4bb543;
+  }
+  
+  /* Buttons styling */
+  button {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #4bb543; /* Success green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e9235;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  /* Image preview */
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  /* Spinner */
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4bb543;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .create-post {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    textarea,
+    select,
+    input[type="file"] {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

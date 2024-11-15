@@ -1,0 +1,71 @@
+.unique-testimonials-section {
+  background-color: #f9fafb; /* Soft background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.unique-testimonials-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.unique-testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds space between testimonial cards */
+}
+
+.unique-testimonial-card {
+  background-color: #f2f2f2; /* Light gray background */
+  border-radius: 10px;
+  border: 1px solid #e0e0e0; /* Subtle border for structure */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unique-testimonial-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.unique-testimonial-text {
+  font-size: 1.1rem;
+  color: #333333; /* Darker text for better readability */
+  margin-bottom: 15px;
+}
+
+.unique-testimonial-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0c6e8e; /* Accent color for names */
+}
+
+.unique-trustpilot-section {
+  margin-top: 40px;
+}
+
+.unique-trustpilot-section p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.unique-trustpilot-section span {
+  color: #00b67a; /* Trustpilot green color */
+}
+
+@media (max-width: 768px) {
+  .unique-testimonials-container {
+    flex-direction: column; /* Stacks testimonials on smaller screens */
+  }
+
+  .unique-testimonial-card {
+    max-width: 90%; /* Adjusts the card width for mobile */
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,74 @@
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .quote-content {
+    max-width: 600px;
+  }
+  
+  .quote-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .quote-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .quote-button {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote-button:hover {
+    background-color: #e04e51;
+  }
+  
+  @media (max-width: 768px) {
+    .quote-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .quote-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .quote-button {
+      align-self: flex-end;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .quote-content p {
+      font-size: 1rem;
+    }
+  
+    .quote-button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+  

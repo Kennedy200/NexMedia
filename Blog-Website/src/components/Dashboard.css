@@ -1,0 +1,201 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .create-post-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-post-btn:hover {
+    background-color: #218838;
+  }
+  
+  .posts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .post-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .post-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .post-snippet {
+    margin: 10px 0;
+  }
+  
+  .view-post-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-post-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .no-posts {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .create-post-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-post-btn:hover {
+    background-color: #218838;
+  }
+
+  /* Loader Animation */
+.loader {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto; /* Center the loader */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333;
+  }  
+
+
+  /* Fixed Feed Button */
+.feed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feed-button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.feed-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .create-post-btn {
+      margin-top: 15px;
+      width: 100%;
+    }
+  
+    .posts-section {
+      grid-template-columns: 1fr;
+    }
+
+    .feed-button {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .feed-icon {
+      font-size: 18px;
+    }
+
+    .logout-btn {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  

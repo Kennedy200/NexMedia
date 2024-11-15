@@ -1,0 +1,76 @@
+.email-section {
+    padding: 50px;
+    background-color: #f7f7f7; /* Lighter background for better contrast */
+    text-align: center;
+}
+
+.email-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.email-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ccc; /* Light border for input fields */
+    background-color: #e8e8e8; /* Lightened background for inputs */
+    color: #333;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 1px solid #f44336; /* Red border on focus */
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.send-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.send-button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .email-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

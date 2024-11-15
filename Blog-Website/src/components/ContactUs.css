@@ -1,0 +1,81 @@
+/* General styles */
+.contact-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-container h2 {
+    font-size: 36px;  /* Increased font size */
+    font-weight: 900; /* Bold */
+    margin-bottom: 20px; /* Add space between header and the line */
+  }
+  
+  .contact-container hr {
+    width: 120px; /* Extend the line to cover the text */
+    margin: 10px auto 40px; /* Add space between the line and the icons */
+    border: 2px solid #000; /* Make the line thicker */
+  }
+  
+  /* Icons styles */
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;  /* Increased gap for better spacing */
+    margin-top: 20px;
+  }
+  
+  .icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .contact-icon {
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    color: #A0522D; /* Light brown color on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(160, 82, 45, 0.1);
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+  }
+  
+  .dropdown p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(160, 82, 45, 0.1) transparent;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .contact-icons {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  

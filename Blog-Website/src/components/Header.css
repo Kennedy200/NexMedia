@@ -1,0 +1,133 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/background.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.navbar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a darker overlay */
+}
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #f78f8f; /* Change to the color of your choice */
+}
+
+.navbar-hamburger {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.navbar-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  color: white;
+}
+
+.navbar-subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: white;
+}
+
+.navbar-cta {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #f54242;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-cta:hover {
+  background-color: #e02e2e;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    height: auto;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navbar-links.nav-open {
+    display: block;
+  }
+
+  .navbar-hamburger {
+    display: block;
+  }
+
+  .navbar-title {
+    font-size: 2.5rem;
+  }
+
+  .navbar-subtitle {
+    font-size: 1.2rem;
+  }
+}

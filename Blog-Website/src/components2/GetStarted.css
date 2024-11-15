@@ -1,0 +1,186 @@
+/* Global styles */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F4F8;
+}
+
+.new-gs-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Navbar */
+.new-gs-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #f54242;
+}
+
+.new-gs-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.new-gs-menu {
+    display: flex;
+}
+
+.new-gs-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.new-gs-nav-links a {
+    text-decoration: none;
+    color: #00695C;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+.new-gs-learn-more-btn {
+    background-color: #f54242;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hamburger Menu */
+.new-gs-hamburger-menu {
+    display: none;
+}
+
+.new-gs-hamburger-icon {
+    fill: #00695C;
+}
+
+/* Main Content */
+.new-gs-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.new-gs-left-content {
+    flex: 1;
+    align-self: flex-start;
+}
+
+.new-gs-left-content h1 {
+    font-size: 70px;
+    color: black;
+    text-align: left;
+}
+
+.new-gs-left-content h2 {
+    font-size: 26px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.new-gs-highlight {
+    position: relative;
+    font-weight: bold;
+    color: black;
+}
+
+.new-gs-highlight::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: #80CBC4;
+    z-index: -1;
+}
+
+.new-gs-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.new-gs-btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.new-gs-signup-btn {
+    background-color: #f54242;
+}
+
+.new-gs-signin-btn {
+    background-color: #f54242;
+}
+
+/* Enlarged image section */
+.new-gs-right-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.new-gs-book-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide image on smaller screens */
+@media (max-width: 768px) {
+    .new-gs-right-content {
+        display: none; /* Hide the image container on small screens */
+    }
+
+    .new-gs-main-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .new-gs-hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .new-gs-menu {
+        display: none;
+    }
+
+    .new-gs-menu.new-gs-active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+    }
+
+    .new-gs-learn-more-btn {
+        display: none; /* Hide on smaller screens */
+    }
+}
